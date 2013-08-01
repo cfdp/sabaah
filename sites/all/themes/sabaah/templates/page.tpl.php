@@ -75,37 +75,14 @@
 
   <div id="page-wrapper"><div id="page">
 
-    <div id="header"><div class="section clearfix">
-
-
-      <?php if ($site_name || $site_slogan): ?>
-        <div id="name-and-slogan">
-          <?php if ($site_name): ?>
-            <?php if ($title): ?>
-              <div id="site-name"><strong>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </strong></div>
-            <?php else: /* Use h1 when the content title is empty */ ?>
-              <h1 id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-            <?php endif; ?>
-          <?php endif; ?>
-
-          <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-        </div> <!-- /#name-and-slogan -->
-      <?php endif; ?>
-
-      <?php print render($page['header']); ?>
-
-    </div></div> <!-- /.section, /#header -->
-
 
     <?php if ($breadcrumb): ?>
-      <!-- <div id="breadcrumb"><?php print $breadcrumb; ?></div> -->
+      <div id="breadcrumb">
+        <?php print $breadcrumb; ?>
+        <?php if ($title != ""): ?>&raquo; <span class="active"><?php print $title ?></span><?php endif; ?>
+      </div>
     <?php endif; ?>
+
 
     <?php print $messages; ?>
 
