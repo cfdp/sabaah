@@ -3,7 +3,7 @@ description = Theme based on Stark and pure-sass which is a port or pure-css. Th
 package = Core
 version = VERSION
 core = 7.x
-stylesheets[all][] = layout.css
+stylesheets[all][] = css/app.css
 
 
 

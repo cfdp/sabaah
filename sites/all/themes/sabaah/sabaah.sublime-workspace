@@ -11,13 +11,6 @@
 	},
 	"buffers":
 	[
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -111,10 +104,18 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/templates/comment.tpl.php",
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/templates/comment-wrapper.tpl.php",
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/layout.css",
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/template.php",
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/templates/forums.tpl.php",
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/sabaah.info",
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/templates/page.tpl.php",
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/forums.tpl.php",
+		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/sabaah.sublime-project",
 		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/templates/forum-list.tpl.php",
 		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/templates/forum-icon.tpl.php",
 		"/Users/lajlev/Library/Caches/Cleanup At Startup/Transmit/46C76429-1600-414B-9AE9-19ACB3D231BE/forum-list.tpl.php",
-		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/layout.css",
 		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/README.txt",
 		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/logo.png",
 		"/Volumes/Sabaah/docs/sites/all/themes/sabaah/screenshot.png",
@@ -230,15 +231,7 @@
 		"/Users/lajlev/Desktop/json.html",
 		"/Users/lajlev/Library/Caches/Cleanup At Startup/Transmit/C9AC69D6-7D6A-4ACB-B4DA-549B025B63BF/michael_test.json",
 		"/Users/lajlev/Desktop/kram-widget.drupal-view",
-		"/Users/lajlev/web/ch3/sites/all/themes/cyberhus/cyberhus.info",
-		"/Users/lajlev/web/ch3/sites/all/themes/cyberhus/js/navigation.js",
-		"/Users/lajlev/web/ch3/sites/all/themes/cyberhus/js/custom_settings.js",
-		"/Users/lajlev/web/test/rails/sample_app/app/views/static_pages/about.html.erb",
-		"/Users/lajlev/web/test/rails/sample_app/app/views/static_pages/help.html.erb",
-		"/Users/lajlev/web/test/rails/sample_app/test/test_helper.rb",
-		"/Users/lajlev/web/test/rails/first_app/config/routes.rb",
-		"/Users/lajlev/web/test/rails/first_app/app/models/user.rb",
-		"/Users/lajlev/web/test/rails/first_app/app/models/micropost.rb"
+		"/Users/lajlev/web/ch3/sites/all/themes/cyberhus/cyberhus.info"
 	],
 	"find":
 	{
@@ -351,34 +344,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

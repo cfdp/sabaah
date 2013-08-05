@@ -20,7 +20,7 @@
 ?>
 <?php if ($time): ?>
   <span class="submitted">
-  <?php print t('By !author @time ago', array(
+  <?php print t('@time ago', array(
     '@time' => $time,
     '!author' => $author,
     )); ?>
