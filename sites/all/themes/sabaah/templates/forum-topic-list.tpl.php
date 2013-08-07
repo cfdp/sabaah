@@ -43,8 +43,7 @@
   </thead>
   <tbody>
   <?php foreach ($topics as $topic): ?>
-    <tr class="<?php print $topic->zebra;?>">
-      <td class="icon"><?php print $topic->icon; ?></td>
+    <tr>
       <td class="title">
         <div>
           <?php print $topic->title; ?>
@@ -58,10 +57,6 @@
     <?php else: ?>
       <td class="replies">
         <?php print $topic->comment_count; ?>
-        <?php if ($topic->new_replies): ?>
-          <br />
-          <a href="<?php print $topic->new_url; ?>"><?php print $topic->new_text; ?></a>
-        <?php endif; ?>
       </td>
       <td class="last-reply"><?php print $topic->last_reply; ?></td>
     <?php endif; ?>

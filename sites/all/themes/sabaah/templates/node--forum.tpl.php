@@ -86,9 +86,8 @@
     $node_name = field_get_items('node', $node, 'field_name');
   ?>
 
-  <?php // drupal_set_message('<pre>' . check_plain(var_export($node, TRUE)) . '</pre>');  ?>
+  <?php //drupal_set_message('<pre>' . check_plain(var_export($node, TRUE)) . '</pre>');  ?>
 
-  <?php print $user_picture; ?>
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
@@ -99,15 +98,28 @@
   <?php if ($display_submitted): ?>
     <div class="submitted">
 
-      <?php print $node_name[0]['value']; ?>
+      <?php
+      if(isset($content['field_name'])):
+        print render($content['field_name']);
+      else:
+        print t("An anonymous user");
+      endif;
+      ?>
+      <?php print t("posted this on"); ?>
+      <?php print format_date($created, "long"); ?>
+       &middot;
+      <?php print render($content['taxonomy_forums']);?>
+      <?php //drupal_set_message('<pre>' . check_plain(var_export($content['field_name'], TRUE)) . '</pre>');  ?>
 
-      <?php print $submitted; ?>
+
     </div>
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
+      hide($content['field_name']);
+      hide($content['taxonomy_forums']);
       hide($content['comments']);
       hide($content['links']);
       print render($content);

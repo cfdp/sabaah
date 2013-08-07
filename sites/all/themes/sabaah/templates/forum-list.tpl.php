@@ -36,15 +36,15 @@
 <table id="forum-<?php print $forum_id; ?>">
   <thead>
     <tr>
-      <th><?php print t('Forum'); ?></th>
-      <th><?php print t('Topics');?></th>
+      <th><?php print t('Topics'); ?></th>
+      <th><?php print t('Treads');?></th>
       <th><?php print t('Posts'); ?></th>
       <th><?php print t('Last post'); ?></th>
     </tr>
   </thead>
   <tbody>
   <?php foreach ($forums as $child_id => $forum): ?>
-    <tr id="forum-list-<?php print $child_id; ?>" class="<?php print $forum->zebra; ?>">
+    <tr id="forum-list-<?php print $child_id; ?>">
       <td <?php print $forum->is_container ? 'colspan="4" class="container"' : 'class="forum"'; ?>>
         <?php /* Enclose the contents of this cell with X divs, where X is the
                * depth this forum resides at. This will allow us to use CSS

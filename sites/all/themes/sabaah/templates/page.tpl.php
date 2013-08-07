@@ -74,14 +74,28 @@
 ?>
 
   <div id="page-wrapper"><div id="page">
+    <header>
+      <div class="header-wrapper">
+        <a href="/" class="logo">
+          <?php print '<img src="'.base_path() . path_to_theme() .'/img/sabaah-logo-big-white.png">'; ?>
+        </a>
+        <a href="/" class="tagline">
+          <span >Forum</span>
+        </a>
 
+        <a href="http://sabaah.dk" class="btn btn-subtle btn-small btn-leave">Forlad forum</a>
+      </div>
+    </header>
 
+    <!--
     <?php if ($breadcrumb): ?>
       <div id="breadcrumb">
         <?php print $breadcrumb; ?>
         <?php if ($title != ""): ?>&raquo; <span class="active"><?php print $title ?></span><?php endif; ?>
       </div>
     <?php endif; ?>
+    -->
+
 
 
     <?php print $messages; ?>
@@ -116,6 +130,9 @@
     </div></div> <!-- /#main, /#main-wrapper -->
 
     <div id="footer"><div class="section">
+      <p class="subtle">
+        <?php print t("Leave forum and go back to"); ?> <a href="http://sabaah.dk"><?php print t("Sabaah homepage"); ?></a>
+      </p>
       <?php print render($page['footer']); ?>
     </div></div> <!-- /.section, /#footer -->
 
