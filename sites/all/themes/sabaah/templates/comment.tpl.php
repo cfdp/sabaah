@@ -62,7 +62,6 @@
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <hr>
   <div class="submitted">
-    <?php print $permalink; ?>
     <?php print $submitted; ?>
   </div>
 

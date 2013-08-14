@@ -43,6 +43,16 @@
     <?php print render($title_suffix); ?>
   <?php endif; ?>
 
+  <?php
+
+    if ($node->comment_count > 1):
+      print '<h2 class="title underline"> ' . $node->comment_count . ' ' . t('comments') . '</h2>';
+    elseif ($node->comment_count == 1):
+      print '<h2 class="title underline">1 ' . t('comment') . '</h2>';
+    endif;
+  ?>
+
+
   <?php print render($content['comments']); ?>
 
   <?php if ($content['comment_form']): ?>

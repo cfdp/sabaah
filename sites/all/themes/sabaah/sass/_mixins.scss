@@ -1,5 +1,5 @@
-$color-primary: #21b692;
-$color-subtle: #aaa;
+$color-primary: darken(#21b692, 5%);
+$color-subtle: #999;
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 .unstyled {

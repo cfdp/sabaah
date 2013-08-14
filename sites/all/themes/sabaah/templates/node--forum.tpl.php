@@ -97,6 +97,7 @@
 
   <?php if ($display_submitted): ?>
     <div class="submitted">
+      Indsendt af
 
       <?php
       if(isset($content['field_name'])):
@@ -105,8 +106,8 @@
         print t("An anonymous user");
       endif;
       ?>
-      <?php print t("posted this on"); ?>
-      <?php print format_date($created, "long"); ?>
+      den
+      <?php print format_date($created, "medium"); ?>
        &middot;
       <?php print render($content['taxonomy_forums']);?>
       <?php //drupal_set_message('<pre>' . check_plain(var_export($content['field_name'], TRUE)) . '</pre>');  ?>
