@@ -1,5 +1,6 @@
 $color-primary: darken(#21b692, 5%);
 $color-subtle: #999;
+$img-path: "/sites/all/themes/sabaah/img";
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 .unstyled {
@@ -20,6 +21,41 @@ $color-subtle: #999;
 
     &:hover {
       color: darken($color-subtle, 10%);
+    }
+  }
+}
+
+.box-highlight {
+  padding: 1em;
+  background: #21b692;
+  color: #fff;
+  margin: -10px;
+  margin-bottom: 10px;
+
+  @media (min-width: 840px) {
+    background: #21b692 url("/sites/all/themes/sabaah/img/bgpattern-left.png") -176px -128px no-repeat;
+    background-size: 845px;
+    min-height: 260px;
+    padding: 1em 1em 1em 13em;
+  }
+
+  @media (min-width: 1140px) {
+    background: url("/sites/all/themes/sabaah/img/bgpattern-left.png") -176px -128px no-repeat #21b692;
+    background-size: 845px, 845px;
+    min-height: 260px;
+    padding: 1em 1em 1em 13em;
+
+    p {
+      width: 780px;
+    }
+  }
+
+
+  a {
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+      color: #fff;
     }
   }
 }

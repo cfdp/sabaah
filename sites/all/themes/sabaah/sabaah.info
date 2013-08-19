@@ -1,5 +1,5 @@
 name = Sabaah
-description = Theme based on Stark and pure-sass which is a port or pure-css. Theme is design for Sabaah forum.
+description = Theme based on Stark. Theme is design for Sabaah forum.
 package = Core
 version = VERSION
 core = 7.x

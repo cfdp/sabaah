@@ -61,8 +61,9 @@ body {
 }
 
 @media (min-width: 500px) and (max-width: 1500px) {
-  .section {
+  .section, .messages.status {
     margin: 10px 5%;
+
   }
 }
 

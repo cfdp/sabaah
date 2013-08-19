@@ -87,23 +87,20 @@
       </div>
     </header>
 
-    <!--
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb">
-        <?php print $breadcrumb; ?>
-        <?php if ($title != ""): ?>&raquo; <span class="active"><?php print $title ?></span><?php endif; ?>
-      </div>
-    <?php endif; ?>
-    -->
-
-
-
-
 
     <div id="main-wrapper"><div id="main" class="clearfix">
       <?php print $messages; ?>
 
       <div id="content" class="column"><div class="section">
+        <?php if (drupal_is_front_page()): ?>
+          <div class="box box-highlight">
+            <h2>Velkommen til Sabaahs debatforum</h2>
+            <p>
+              Her kan du trygt og sikkert dele dine erfaringer og dine tanker med andre. Vi har valgt at forummet skal være helt anonymt for at sikre, at samtalerne herinde forbliver fortrolige. Se evt. vores <a href="/retningslinjer">retningslinjer</a>, inden du skriver. Velkommen til!
+            </p>
+          </div>
+        <?php endif; ?>
+
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
@@ -132,7 +129,8 @@
 
     <div id="footer"><div class="section">
       <p class="subtle">
-        <?php print t("Leave forum and go back to"); ?> <a href="http://sabaah.dk"><?php print t("Sabaah homepage"); ?></a>
+        Læs <a href="/retningslinjer">retningslinjer</a> for forum. <br>
+        Gå tilbage til <a href="http://sabaah.dk"><?php print t("Sabaah homepage"); ?></a>
       </p>
       <?php print render($page['footer']); ?>
     </div></div> <!-- /.section, /#footer -->
