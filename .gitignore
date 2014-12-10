@@ -6,5 +6,5 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
-sites/all/modules/stage_file_proxy/
+sites/all/modules/gv_dev_pack/
 sites/all/themes/sabaah/.sass-cache/
