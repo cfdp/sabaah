@@ -8,3 +8,4 @@ sites/*/private
 
 sites/all/modules/gv_dev_pack/
 sites/all/themes/sabaah/.sass-cache/
+sites/all/modules/stage_file_proxy/
